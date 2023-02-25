@@ -11,6 +11,6 @@
     @endif
 </div>
 <div class="card-body">
-    <h1 align="center">PT POS INDONESIA SISTEM INFORMASI INVENTARIS</h1>
+    <h1 align="center">{{ config('app.name') }}</h1>
 </div>
 @endsection

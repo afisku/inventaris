@@ -39,7 +39,7 @@
         <div class="sidebar-brand-icon rotate-n-15">
         
         </div>
-        <div class="sidebar-brand-text mx-1">PT Pos Indonesia</div>
+        <div class="sidebar-brand-text mx-1">{{ config('app.name') }}</div>
       </a>
 
       <!-- Divider -->
@@ -351,7 +351,7 @@
       <footer class="sticky-footer bg-white">
         <div class="container my-auto">
           <div class="copyright text-center my-auto">
-            <span>Copyright &copy; PT Pos Indonesia (Persero)</span>
+            <span>Copyright &copy; {{ config('app.name') }}</span>
           </div>
         </div>
       </footer>
@@ -419,7 +419,7 @@
 
 
   @stack('scripts')
-  @include('sweet::alert')
+  @include('sweetalert::alert')
 </body>
 
 </html>
