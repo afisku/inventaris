@@ -13,7 +13,6 @@ class KeranjangkeluarController extends Controller
         $this->middleware(['auth','Admin']);
     }
 
-
     public function index()
 
     {
@@ -24,17 +23,11 @@ class KeranjangkeluarController extends Controller
 
         $barang = DB::table('barangs')->get();
   
-
-        return view('keranjang_keluar.view', compact('keluar', 'barang'));
-
-        
+        return view('keranjang_keluar.view', compact('keluar', 'barang'));      
     }
-
-   
 
     public function store(Request $request)
     {
-
         for ($a=0; $a < count($request->id_barang); $a++) { 
             $sin = DB::table('keranjang_keluar')->where('id_barang', $request->id_barang[$a])->count();
             if ($sin == 0) {

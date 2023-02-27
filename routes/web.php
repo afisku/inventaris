@@ -21,7 +21,6 @@ Route::post('change-password', 'ChangePasswordController@store')->name('change.p
 
 Auth::routes();
 
-
 Route::post('/user/update','UserController@update');
 Route::get('/home', 'HomeController@index');
 Route::post('/user/post', 'UserController@update');
@@ -29,12 +28,10 @@ Route::get('user/json', 'UserController@json');
 Route::resource('user', 'UserController');
 Route::resource('barang', 'BarangController');
 
-
 Route::post('/barang/post', 'BarangController@update');
 Route::get('/barang/delete/{id_barang}', 'BarangController@delete');
 Route::get('/barang/edit/{id_barang}', 'BarangController@edit');
 Route::post('/barang/update', 'BarangController@update');
-
 
 // ruangan
 Route::get('/ruangan', 'RuanganController@index');
@@ -116,8 +113,6 @@ Route::post('/rusak_luar/update', 'RusakluarController@update');
 Route::get('/rusak_luar/delete/{id_rusak_luar}', 'RusakluarController@delete');
 Route::get('/rusak_luar/status/{id_rusak_luar}/{id_barang_rusak}', 'RusakluarController@status');
 
-
-
 //keranjang_ruangan
 Route::get('/keranjang_ruangan', 'KeranjangruanganController@index');
 Route::post('/keranjang_ruangan/store', 'KeranjangruanganController@store');
@@ -161,9 +156,6 @@ Route::post('/keranjang_rusak_luar/store', 'KeranjangrusakluarController@store')
 Route::get('/keranjang_rusak_luar/edit/{id_rusak}', 'KeranjangrusakluarController@edit');
 Route::post('/keranjang_rusak_luar/update', 'KeranjangrusakluarController@update');
 Route::get('/keranjang_rusak_luar/hapus/{id_rusak}', 'KeranjangrusakluarController@delete');
-
-
-
 
 //Export
 Route::get('/peminjaman/export_excel', 'PeminjamanController@export_excel');
