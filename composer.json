@@ -14,7 +14,6 @@
         "laravel/tinker": "^2.7",
         "laravel/ui": "^4.0",
         "laravelcollective/html": "^6.3",
-        "maatwebsite/excel": "^3.1",
         "realrashid/sweet-alert": "^6.0",
         "simplesoftwareio/simple-qrcode": "~4",
         "yajra/laravel-datatables": "^9.0"
